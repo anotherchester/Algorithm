@@ -8,6 +8,9 @@ public class Main {
         int x = alg.wordCounter("java java java java ok ok");
         System.out.println(x);
 
+        int y = alg.currentWordCounter("Java Oleg Cat Dog Java Java Cat Cat Cat Dog ");
+        System.out.println(y);
 
-    }}
+    }
+}
 
