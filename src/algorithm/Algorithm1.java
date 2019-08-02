@@ -1,7 +1,5 @@
 package algorithm;
 
-import java.util.Random;
-
 public class Algorithm1 {
 
     public static int wordCounter(String text) {
@@ -13,18 +11,16 @@ public class Algorithm1 {
     }return count;
 }
 
-    public static int currentWordCounter(String text) {
+    public static int currentWordCounter(String text, String word) {
         String[] arrayWords = text.split(" ");
-        int q = new Random().nextInt(arrayWords.length);
         int count = 0;
         for (int i = 0; i < arrayWords.length; i++)
         {
-            if (arrayWords[i].equals(arrayWords[q]))
+            if (arrayWords[i].equals(word))
             {count ++;}
         }
         return  count;
     }
-
 
 }
 
